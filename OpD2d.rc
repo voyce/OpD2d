@@ -1,0 +1,331 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG  0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About OpD2d"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "OpD2d Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2001",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_OPD2D_DIALOG DIALOGEX 0, 0, 320, 201
+STYLE DS_SETFONT | WS_POPUP | WS_VISIBLE
+EXSTYLE WS_EX_APPWINDOW
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "&Record",IDC_RECORD_BTN,155,65,50,15,BS_FLAT
+    PUSHBUTTON      "&Stop",IDC_STOP_BTN,155,82,50,15,BS_FLAT
+    COMBOBOX        IDC_DEVICE_COMBO,58,65,90,50,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_PATH_EDIT,58,35,75,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BROWSE_BTN,133,35,15,12,BS_FLAT
+    CTEXT           "",IDC_PROGRESS_TEXT,48,81,95,13,SS_NOPREFIX,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_LENGTH_EDIT,58,50,32,13,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    COMBOBOX        IDC_UNITS_COMBO,90,50,41,40,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "?",IDC_HELP_BTN,126,99,15,15,BS_FLAT
+    PUSHBUTTON      "...",IDC_FORMAT_BUTTON,133,50,15,12,BS_FLAT
+    PUSHBUTTON      "&Preview",IDC_PREVIEW_BTN,155,99,50,15,BS_FLAT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,4,0,0
+ PRODUCTVERSION 1,4,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "Visit us at www.opcode.co.uk"
+            VALUE "CompanyName", "Opcode Digital Ltd"
+            VALUE "FileDescription", "Opcode Direct2Disk audio recorder"
+            VALUE "FileVersion", "1.4"
+            VALUE "InternalName", "OpD2d"
+            VALUE "LegalCopyright", "© 2007 Opcode Digital Ltd"
+            VALUE "OriginalFilename", "OpD2d.EXE"
+            VALUE "ProductName", "OpD2d Application"
+            VALUE "ProductVersion", "1.4"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_OPD2D_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 194
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_OPD2D_DIALOG DLGINIT
+BEGIN
+    IDC_UNITS_COMBO, 0x403, 8, 0
+0x694d, 0x756e, 0x6574, 0x0073, 
+    IDC_UNITS_COMBO, 0x403, 3, 0
+0x424d, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About OpD2d..."
+    IDS_SIZEARGUMENT_ERROR  "Unable to parse size/duration argument %1"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.K.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_FORMAT_DIALOG DIALOG  0, 0, 186, 196
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Sample Format"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,129,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,24,50,14
+    GROUPBOX        "",IDC_STATIC,5,5,115,110
+    CONTROL         "WAV",IDC_WAV_RADIO,"Button",BS_AUTORADIOBUTTON,15,5,33,10
+    GROUPBOX        "",IDC_STATIC,5,120,170,70
+    CONTROL         "MP3",IDC_MP3_RADIO,"Button",BS_AUTORADIOBUTTON,15,120,31,10
+    LTEXT           "&Sample rate:",IDC_STATIC,21,20,40,8
+    COMBOBOX        IDC_RATE_COMBO,15,30,90,41,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Channels:",IDC_STATIC,21,50,32,8
+    COMBOBOX        IDC_CHANNELS_COMBO,15,60,65,40,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Bits per sample:",IDC_STATIC,21,81,50,8
+    COMBOBOX        IDC_BITS_COMBO,15,90,65,40,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "No encoder found",IDC_MP3_VERSION_TEXT,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,15,135,150,20
+    LTEXT           "Bit &Rate",IDC_STATIC,20,155,26,8
+    COMBOBOX        IDC_MP3_BITRATE_COMBO,15,165,48,65,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_FORMAT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 189
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_FORMAT_DIALOG DLGINIT
+BEGIN
+    IDC_RATE_COMBO, 0x403, 6, 0
+0x3434, 0x3031, 0x0030, 
+    IDC_RATE_COMBO, 0x403, 6, 0
+0x3232, 0x3530, 0x0030, 
+    IDC_RATE_COMBO, 0x403, 6, 0
+0x3131, 0x3230, 0x0035, 
+    IDC_CHANNELS_COMBO, 0x403, 2, 0
+0x0031, 
+    IDC_CHANNELS_COMBO, 0x403, 2, 0
+0x0032, 
+    IDC_BITS_COMBO, 0x403, 2, 0
+0x0038, 
+    IDC_BITS_COMBO, 0x403, 3, 0
+0x3631, "\000" 
+    IDC_MP3_BITRATE_COMBO, 0x403, 3, 0
+0x3436, "\000" 
+    IDC_MP3_BITRATE_COMBO, 0x403, 3, 0
+0x3639, "\000" 
+    IDC_MP3_BITRATE_COMBO, 0x403, 4, 0
+0x3131, 0x0032, 
+    IDC_MP3_BITRATE_COMBO, 0x403, 4, 0
+0x3231, 0x0038, 
+    IDC_MP3_BITRATE_COMBO, 0x403, 4, 0
+0x3931, 0x0032, 
+    IDC_MP3_BITRATE_COMBO, 0x403, 4, 0
+0x3232, 0x0034, 
+    IDC_MP3_BITRATE_COMBO, 0x403, 4, 0
+0x3532, 0x0036, 
+    0
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\OpD2d.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\OpD2d.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP                  "window.bmp"
+IDB_BITMAP2             BITMAP                  "popup.bmp"
+#endif    // English (U.K.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\OpD2d.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
