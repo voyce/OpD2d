@@ -45,7 +45,7 @@ BOOL CPreviewThread::InitInstance()
 	m_data.m_format.dwRate = 44100;
 	m_data.m_format.uiBitRate = 192;
 
-	m_wnd.m_pThread = AfxBeginThread( PreviewThreadProc, &m_data);
+	AfxBeginThread( PreviewThreadProc, &m_data);
 	return TRUE;
 }
 
